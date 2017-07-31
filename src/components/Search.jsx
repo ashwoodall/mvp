@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { FormControl } from 'react-bootstrap';
 
 class Search extends React.Component {
   constructor(props){
@@ -11,7 +11,7 @@ class Search extends React.Component {
   render() {
     return (
      <div>
-      <input></input>
+      <FormControl placeholder="Grab a cold one"></FormControl>
       <button>Beer me.</button>
      </div>
     )
