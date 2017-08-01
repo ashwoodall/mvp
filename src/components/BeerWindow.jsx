@@ -8,7 +8,7 @@ import { Row, Col } from 'react-bootstrap';
 const BeerWindow = (props) => (
   <div className="BeerWindow">
     {props.beers.map((beer, index) =>
-      <Col key={ index } xs={12} md={6} ><Beer key={beer.id} beer={beer} /></Col>
+      <Col key={ index } xs={12} md={5} lg={4}><Beer key={beer.id} beer={beer} /></Col>
     )}
   </div>
 );

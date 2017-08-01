@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormControl } from 'react-bootstrap';
+import { FormControl, Row, Col } from 'react-bootstrap';
 
 import BeerWindow from './BeerWindow.jsx';
 
@@ -25,9 +25,9 @@ class Search extends React.Component {
 
   render() {
     return (
-     <div>
-      <FormControl onChange={ this.handleChange } value={ this.state.beer } placeholder="Grab a cold one"></FormControl>
-      <button onClick={ this.handleSubmit }>Beer me.</button>
+     <div className="searchbar">
+      <input className="search" onChange={ this.handleChange } value={ this.state.beer } placeholder="Grab a cold one"></input>
+      <div className="button" onClick={ this.handleSubmit }>Beer me.</div>
      </div>
     )
   }

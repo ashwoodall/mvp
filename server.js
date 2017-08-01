@@ -34,7 +34,7 @@ app.get('/api/search', function(req, res){
   var url = API_URL + '/search?q=';
   var q = req.query.q;
 
-  url = url + q + '&p=1' + '&type=beer' + '&key=' + API_KEY;
+  url = url + q + '&p=1' + '&withBreweries=Y' + '&type=beer' + '&key=' + API_KEY;
 
   request(url, function(error, response, body) {
     if (!error && response.statusCode === 200) {

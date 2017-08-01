@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Knewave');
+
 body{
   background-color: #313638;
   font-family: 'Helvetica';
@@ -5,35 +7,90 @@ body{
   text-align: center;
 }
 
-button {
-  width: 100%;
+.button {
+  width: 100px;
   height: 50px;
   background-color: #F29F2B;
-  margin: 10px 0 0 0;
+  box-shadow: 5px 5px 5px #1B1E1F;
+  padding: 15px 0 0 0;
+  margin-left: 5px;
+  font-weight: 800;
+}
+
+.button:hover {
+  background-color: #B3D8DB;
+  cursor:pointer;
+
+}
+
+.button:active {
+  box-shadow: none;
+}
+
+button:focus {
+  outline: 0 none;
 }
 
 h1 {
   padding-top: 60px;
+  font-family: 'Knewave', cursive;
+  font-size: 4em;
+}
+
+img {
+  margin-bottom: 5px;
+}
+
+input {
+  outline: none;
+  padding: 5px;
+}
+
+p {
+  padding: 3px;
 }
 
 
 .beers {
   padding: 5px;
-  margin: 10px 0;
-  background-color: #B3D8DB;
+  margin: 0 auto;
+  background-color: black;
 }
 
 .beer {
   background-color: #E8E9EB;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px #1B1E1F;
   padding: 25px;
-  margin: 20px auto;
+  margin: 20px 5px;
   width: 300px;
-  height: auto;
+  height: 600px;
   text-align: left;
+}
+
+.container {
+  max-width: 975px;
 }
 
 .header {
   background-color: #313638;
   height: 150px;
   color: #F29F2B;
+}
+
+.scroll {
+  overflow:auto;
+  height:100px;
+}
+
+.search {
+  height: 50px;
+  width: 100%;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
 }
