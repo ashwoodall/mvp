@@ -22,11 +22,16 @@
     "babel-preset-react": "^6.24.1",
     "babelify": "^7.3.0",
     "browserify-middleware": "^7.1.0",
+    "cors": "^2.8.4",
+    "es6-promise": "^4.1.1",
     "express": "^4.15.3",
+    "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.2.1",
     "nodemon": "^1.11.0",
     "path": "^0.12.7",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-bootstrap": "^0.31.1",
+    "react-dom": "^15.6.1",
+    "request": "^2.81.0"
   }
 }

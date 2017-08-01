@@ -1,15 +1,14 @@
 import React from 'react';
 
-const Beer = (props) => (
+const Beer = ({ beer }) => (
   <div className="beer">
-    <p>Name: Pearl Snap</p>
-    <img src="https://s3.amazonaws.com/brewerydbapi/beer/pLRUgD/upload_MDbR0Z-medium.png" />
-    <p>Description: "When the temperature hits 100, this beer will be your best friend.
-    When it hits 109, six of these will be your girlfriend. It has a bright hop character with a
-    finish so clean it will pick up after itself. It’s Crisp, Refreshing, and Clean. HOPS: German Magnum,
-    Tettnanger, Saaz, Hallertau\r\nMALTS: Pils, Carapils\r\nYEAST: Urquell Lager"</p>
-    <p>Type: Pilsner</p>
-    <p>ABV: 5</p>
+    <p><label>Name: </label> { beer.name }</p>
+    { beer.labels && <img src={ beer.labels.medium } /> }
+    { !beer.labels && <img width='256' height='256' src='https://www.drinkpreneur.com/wp-content/uploads/2017/04/drinkpreneur_2016-01-26-1453821995-8643361-beermain.jpg' /> }
+    <p><label>Description: </label>{ beer.description }</p>
+    <p><label>Type: </label>{ beer.style.name }</p>
+    <p><label>ABV: </label> { beer.abv }</p>
+    <p><label>IBU: </label> { beer.ibu }</p>
   </div>
 );
 

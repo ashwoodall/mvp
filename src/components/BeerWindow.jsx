@@ -4,35 +4,36 @@ import Beer from './Beer.jsx'
 import { Row, Col } from 'react-bootstrap';
 
 
-class BeerWindow extends React.Component {
-  constructor(props){
-    super(props);
 
-  }
-
-
-  render() {
-    return (
-     <div className="beers">
-     <Row className="show-grid">
-      <h3>Full pours of brew info just for you</h3>
-      <Col xs={12} md={4}> <Beer /> </Col>
-      <Col xs={12} md={4}> <Beer /> </Col>
-      <Col xs={12} md={4}> <Beer /> </Col>
-      <Col xs={12} md={4}> <Beer /> </Col>
-      <Col xs={12} md={4}> <Beer /> </Col>
-      <Col xs={12} md={4}> <Beer /> </Col>
-      <Col xs={12} md={4}> <Beer /> </Col>
-      <Col xs={12} md={4}> <Beer /> </Col>
-      <Col xs={12} md={4}> <Beer /> </Col>
-      <Col xs={12} md={4}> <Beer /> </Col>
+const BeerWindow = (props) => (
+  <div className="BeerWindow">
+    {props.beers.map((beer, index) =>
+      <Col key={ index } xs={12} md={6} ><Beer key={beer.id} beer={beer} /></Col>
+    )}
+  </div>
+);
 
 
-    </Row>
-     </div>
-    )
-  }
-}
+// class BeerWindow extends React.Component {
+//   constructor(props){
+//     super(props);
+
+//   }
+
+
+//   render() {
+//     return (
+//      <div className="beers">
+//       <h3>Full pours of brew info just for you</h3>
+//        <Row className="show-grid">
+//          {props.beers.map(beer =>
+//            <Beer key={beer.id} beer={beer} />
+//          )}
+//       </Row>
+//      </div>
+//     )
+//   }
+// }
 
 
 export default BeerWindow;
