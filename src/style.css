@@ -68,6 +68,10 @@ p {
   text-align: left;
 }
 
+.brewery {
+  white-space: nowrap;
+}
+
 .container {
   max-width: 975px;
 }
