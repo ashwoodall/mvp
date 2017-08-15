@@ -6,9 +6,6 @@ var request = require('request');
 
 var app = express();
 
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/ohbeer');
-
 var API_URL = 'http://api.brewerydb.com/v2';
 var API_KEY = 'dc1cda63d965b27555774c986b87b361';
 
